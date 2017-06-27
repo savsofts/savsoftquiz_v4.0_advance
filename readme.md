@@ -39,7 +39,7 @@ Community Support https://savsoftquiz.com/forum/
 
 Documentation: https://savsoftquiz.com/docs/
 
-Installation: https://www.savsoftquiz.com/user_guide_v4.0/installation.html
+Installation: https://savsoftquiz.com/docs/installation.php
 
 
 If you like Savsoft Quiz and want to help us to keep it free and upgradeable then please get professional installation service at https://savsoftquiz.com/commercial.php
