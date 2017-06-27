@@ -13,6 +13,8 @@ if(!file_get_contents('application/controllers/Payment_gateway_2.php')){
 
 <div class="alert alert-danger"><b>Like Savsoft Quiz?</b> <br>
 Please <a href="https://savsoftquiz.com/commercial.php">buy installation service</a> which is like donating to this app and help  us to keep this app free & open source.
+
+<a href="https://savsoftquiz.com/docs/edit_dashboard.php" target="docs" style="float:right;font-size:12px;color:#666666;">Remove it</a>
 </div>
 <div class="row">
 
@@ -345,11 +347,17 @@ foreach($payments as $key => $val){
 
 
 
- 
-
 
 
 </div>
+ 
+<div class="row text-center">
+ 
+<?php 
+echo "Page rendered in <strong>{elapsed_time}</strong> seconds. You may improve it by hosting on recommended hosting. <a href='http://savsoftquiz.com/affiliate.php' target='af'>Click here</a> ";
+?>
+</div>
+
 <script>
 update_check('4.0');
 </script>
