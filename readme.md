@@ -35,10 +35,11 @@ Server Requirements:
 
 PHP 5+ One MySql Database (v5+) Linux or Windows server ( Recommend Linux with cPanel hosting) Minimum 35 MB Disk space (web space)
 
-Community Support http://savsoftquiz.com/forum/
+Community Support https://savsoftquiz.com/forum/
 
-Documentation: http://savsoftquiz.com/docs/
+Documentation: https://savsoftquiz.com/docs/
 
 Installation: https://savsoftquiz.com/docs/installation.php
+
 
 If you like Savsoft Quiz and want to help us to keep it free and upgradeable then please get professional installation service at https://savsoftquiz.com/commercial.php
