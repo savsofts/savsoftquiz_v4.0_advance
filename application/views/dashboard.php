@@ -11,7 +11,9 @@ if(!file_get_contents('application/controllers/Payment_gateway_2.php')){
 }
 ?>
 
-
+<div class="alert alert-danger"><b>Like Savsoft Quiz?</b> <br>
+Please <a href="https://savsoftquiz.com/commercial.php">buy installation service</a> which is like donating to this app and help  us to keep this app free & open source.
+</div>
 <div class="row">
 
 <div class="col-md-4">

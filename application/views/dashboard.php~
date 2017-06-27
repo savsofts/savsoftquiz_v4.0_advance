@@ -11,7 +11,9 @@ if(!file_get_contents('application/controllers/Payment_gateway_2.php')){
 }
 ?>
 
-
+<div class="alert alert-danger"><b>Like Savsoft Quiz?</b> <br>
+Please buy installation service which is equal to donation to this app and help  us to keep this app free & open source.
+</div>
 <div class="row">
 
 <div class="col-md-4">
@@ -349,5 +351,5 @@ foreach($payments as $key => $val){
 
 </div>
 <script>
-update_check('3.0');
+update_check('4.0');
 </script>
