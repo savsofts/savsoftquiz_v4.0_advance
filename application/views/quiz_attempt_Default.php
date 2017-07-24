@@ -374,7 +374,7 @@ foreach($questions as $qk => $question){
 		for($j=0; $j < $quiz['noq']; $j++ ){
 			?>
 			
-			<div class="qbtn" onClick="javascript:show_question('<?php echo $j;?>');" id="qbtn<?php echo $j;?>" ><?php echo ($j+1);?></div>
+			<div class="qbtn" onClick="javascript:show_question('<?php echo $j;?>');" id="qbtn<?php echo $j;?>"  ><?php echo ($j+1);?></div>
 			
 			<?php 
 		}

@@ -17,6 +17,9 @@ $config['webcam']=true;
 // google chart ( true or false )
 $config['google_chart']=true;
 
+// google chart ( true or false )
+$config['dompdf']=true;
+
  
 // Allow registration ( true or false )
 $config['user_registration']=true;

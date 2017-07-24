@@ -64,7 +64,7 @@ if($this->config->item('tinymce')){
 		theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
 		theme_advanced_buttons4 : "jbimages,insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak,restoredraft,visualblocks",
 		
-		
+	
 	});
 	
 <?php 
@@ -290,6 +290,7 @@ messaging.onTokenRefresh(function() {
 </div>
 
 <!--  firebase notification model ends --> 
+
 
 </body>
 </html>

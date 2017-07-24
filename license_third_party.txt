@@ -1,0 +1,25 @@
+THIRD PARTY LICENSES
+
+Following are scripts or libraries (mentioned with their license) used in Savsoft Quiz.
+
+1) Codeigniter - Framework
+   The MIT License (MIT)
+
+2) WebcamJS - To capture photo while attempting quiz.
+   The MIT License (MIT)
+   You can disable this feature in config.php file if license is not suitable for you.
+
+3) Google Chart - To generate result report
+   The Apache License, Version 2.0
+   You can disable this feature in config.php file if license is not suitable for you.
+
+4) DOMPDF - To generate pdf certificate.
+   GNU LESSER GENERAL PUBLIC LICENSE Version 2.1
+   You can disable this feature in config.php file if license is not suitable for you. 
+   
+4) TinyMce - To generate rich text editor.
+   GNU LESSER GENERAL PUBLIC LICENSE Version 2.1
+   You can disable this feature in config.php file if license is not suitable for you. 
+   
+5) Bootstrap - Layout
+   The MIT License (MIT)

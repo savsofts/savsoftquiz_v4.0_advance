@@ -201,10 +201,7 @@ class Result extends CI_Controller {
 		$this->session->unset_userdata('logged_in');		
 		redirect('login');
 		}
-		if(!$this->config->item('dompdf')){
-		exit('DOMPDF library disabled in config.php file');
 		
-		}
 	$data['result']=$this->result_model->get_result($rid);
 	if($data['result']['gen_certificate']=='0'){
 		exit();
