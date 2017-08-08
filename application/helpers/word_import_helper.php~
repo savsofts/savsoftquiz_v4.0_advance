@@ -8,14 +8,14 @@ function xml_attribute($object, $attribute)
 }
 if ( ! function_exists('word_file_import'))
 {
-    function word_file_import($Filepath)
+    function word_file_import()
     {
        
 $target_dir = "upload/";
 
-$target_file = $Filepath;
+$target_file = $target_dir . basename($_FILES["word_file"]["name"]);
 
- 
+ if (move_uploaded_file($_FILES["word_file"]["tmp_name"], $target_file)) {
       
 $info = pathinfo($target_file);
     $new_name=$info['filename'] . '.Zip'; 
@@ -174,7 +174,9 @@ return $singlequestion_array;
 
 
 
-    
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
 
     }   
 }

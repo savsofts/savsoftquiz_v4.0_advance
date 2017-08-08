@@ -336,7 +336,6 @@ class Login extends CI_Controller {
 
 		 // super admin code login controller 
 	public function superadminlogin(){
-	$this->load->helper('url');
 			$logged_in=$this->session->userdata('logged_in_super_admin');
 			if($logged_in['su']!='3'){
 				exit('permission denied');
