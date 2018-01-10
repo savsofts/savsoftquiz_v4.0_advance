@@ -646,11 +646,10 @@ $this->db->query(" update savsoft_qbank set lid='$mlid' where lid='$lid' ");
 	
 	function import()
 		{	
-					$logged_in=$this->session->userdata('logged_in');
-                        $acp=explode(',',$logged_in['quiz']);
-			if(!in_array('Add',$acp)){
-			exit($this->lang->line('permission_denied'));
-			}	
+			$logged_in=$this->session->userdata('logged_in');
+			if($logged_in['su']!='1'){
+				exit($this->lang->line('permission_denied'));
+			} 	
 
    $this->load->helper('xlsimport/php-excel-reader/excel_reader2');
    $this->load->helper('xlsimport/spreadsheetreader.php');
