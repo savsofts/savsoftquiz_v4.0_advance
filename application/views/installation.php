@@ -112,6 +112,7 @@ if (strpos($row['Value'], 'ONLY_FULL_GROUP_BY') !== false) {
 $groupbymode=0;
 }
 
+
 		?>
 		<h4>Minimum requirement:<h4>
 		
