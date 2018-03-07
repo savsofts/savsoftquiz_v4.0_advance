@@ -121,7 +121,8 @@ $groupbymode=0;
 		<tr <?php if (floatval($mysqlversion) < 5.5) { ?>style="background:#FF9999;"<?php } ?> ><th class='thead'>MySql Version</th><td>5.5+</td><td><?php echo $mysqlversion;?></td></tr>
 		<tr   <?php if (!extension_loaded('zip')) { ?>style="background:#FF9999;"<?php } ?> ><th class='thead'>PHP-ZIP Library</th><td> Required </td><td><?php if (!extension_loaded('zip')){ echo "Not found";}else{ echo "Installed"; }  ?></td></tr>
 		
-		 
+		<tr   <?php if (function_exists('curl_version')===false) { ?>style="background:#FF9999;"<?php } ?> ><th class='thead'>PHP cURL   </th><td> Required </td><td><?php if (function_exists('curl_version')===false){ echo "Not found";}else{ echo 'Installed'; }  ?></td></tr>
+		
 		
 		<tr   <?php if ($groupbymode==1) { ?>style="background:#FF9999;"<?php } ?> ><th class='thead'>MySql ONLY_FULL_GROUP_BY</th><td> Disabled </td><td><?php if($groupbymode==1) { echo "Enabled";}else{ echo "Disabled"; }  ?></td></tr>
 		

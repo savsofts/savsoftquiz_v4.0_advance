@@ -128,7 +128,7 @@ $config['payment_gateways']=array('paypal','checkout','payumoney','paytm');
 $config['default_gateway']="paypal";
 
 // enable - disable paypal gateway
-$config['paypal']="true";
+$config['paypal']=true;
 // environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
 $config['paypal_environment']="sandbox.";
 $config['paypal_receiver']="";
@@ -139,7 +139,7 @@ $config['paypal_conversion']="1";
 
 
 // enable - disable 2checkout gateway
-$config['checkout']="true";
+$config['checkout']=true;
 // environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
 $config['checkout_environment']="sandbox.";
 $config['checkout_sid']="";
@@ -153,7 +153,7 @@ $config['checkout_conversion']="1";
 
 
 // enable - disable payumoney gateway
-$config['payumoney']="true";
+$config['payumoney']=true;
 // payu merchant key
 $config['payu_merchant_key']="";
 // payu salt
@@ -167,7 +167,7 @@ $config['payumoney_conversion']="66";
 
 
 // enable - disable paytm gateway
-$config['paytm']="true";
+$config['paytm']=true;
 // environment TEST or PROD 
 $config['paytm_environment']="TEST";
 // paytm merchant key

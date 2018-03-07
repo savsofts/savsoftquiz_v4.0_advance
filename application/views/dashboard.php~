@@ -1,21 +1,35 @@
- <div class="container">
+ <style>
+.txtVertical 
+{
+	 position: fixed;
+	
+    right: 0px;
+    bottom: 0px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+
+<div class="container">
 
    
  
 <div id="update_notice"></div>  
-<?php 
-if(!file_get_contents('application/controllers/Payment_gateway_2.php')){
-?>
-<div class="alert alert-danger"><?php echo $this->lang->line('commercial_msg');?></div>
-<?php
-}
-?>
+ 
 
-<div class="alert alert-danger"><b>Like Savsoft Quiz?</b> <br>
-Please <a href="https://savsoftquiz.com/commercial.php">buy installation service</a> which is like donating to this app and help  us to keep this app free & open source.
-
-<a href="https://savsoftquiz.com/docs/edit_dashboard.php" target="docs" style="float:right;font-size:12px;color:#666666;">Remove it</a>
-</div>
+ 
 <div class="row">
 
 <div class="col-md-4">
@@ -357,7 +371,52 @@ foreach($payments as $key => $val){
 echo "Page rendered in <strong>{elapsed_time}</strong> seconds. You may improve it by hosting on recommended hosting. <a href='http://savsoftquiz.com/affiliate.php' target='af'>Click here</a> ";
 ?>
 </div>
+<!-- Modal -->
+<div id="upgrade" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Upgrade to Enterprise</h4>
+      </div>
+      <div class="modal-body" id="upgrade_content"><center>
+       <div class="loader"></div>
+       <br><br>
+       Loading data from <a href="https://savsoftquiz.com/" >www.savsoftquiz.com</a></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<a href="#" class="txtVertical btn btn-danger btn-lg" data-toggle="modal" data-target="#upgrade" style="border-radius:0px;">Upgrade to Enterprise</a>
 <script>
 update_check('4.0');
+$( "#upgrade" ).on('shown.bs.modal', function(){
+    	var formData = {group_name:'4.0'};
+	$.ajax({
+		 type: "POST",
+		 data : formData,
+			 url: "https://savsoftquiz.com/upgrade.php?ref=<?php echo base_url();?>",
+		success: function(data){
+		$("#upgrade_content").html(data);
+			
+			},
+		error: function(xhr,status,strErr){
+			//alert(status);
+			}	
+		});
+});
+ 
+<?php if(date('d',time())==1 || date('d',time())==7 || date('d',time())==14 || date('d',time())==21){ ?>
+setTimeout(function(){ 
+$( "#upgrade" ).modal('show');
+},3000);
+<?php } ?>
+
 </script>
