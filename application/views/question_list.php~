@@ -267,7 +267,7 @@ if(($limit-($this->config->item('number_of_rows')))>=0){ $back=$limit-($this->co
 </form>
 
 </div>
-<div class="alert alert-warning"> Free version doesn't support Math equations while importing Ms Word file. You can upgrade to <a href="https://savsoftquiz.com/?ref=<?php echo base_url();?>">Enterprise  Version</a> with OMML plugin to support math equations.</div>
+<div class="alert alert-warning"> Free version doesn't support Math equations while importing Ms Word file. You can upgrade to <a href="https://savsoftquiz.com/">Enterprise  Version</a> with OMML plugin to support math equations.</div>
 
 
 
